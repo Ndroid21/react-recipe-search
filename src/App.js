@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { Component } from 'react';
+import RecipeSearch from './components/RecipeSearch';
 
-export default function App() {
-  return (
-    <React.Fragment>
-      <h1>Hello from App</h1>
-    </React.Fragment>
-  )
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+export default class App extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        <RecipeSearch />
+      </React.Fragment>
+    );
+  }
 }
+
